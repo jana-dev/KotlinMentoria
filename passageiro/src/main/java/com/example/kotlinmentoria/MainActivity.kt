@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
+    //Lateinit serve para poder inicializar depois e utilizar fora do onCreate
     lateinit var texto : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         texto.setText("Inicial")
     }
 
-    fun alterarTexto(){
-        texto.setText("Alterado")
-    }
+//    fun alterarTexto(){
+//        texto.setText("Alterado")
+//    }
 }
